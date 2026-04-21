@@ -12,9 +12,9 @@ html { scroll-behavior: smooth; }
   --muted:       #5f6b7a;
   --white:       #ffffff;
 
-  --escobar:     #c8a96e;   /* arany */
-  --raceboy:     #3b82f6;   /* kék   */
-  --kozos:       #e84040;   /* piros */
+  --escobar:     #c8a96e;
+  --raceboy:     #3b82f6;
+  --kozos:       #e84040;
 
   --font-display: 'Bebas Neue', sans-serif;
   --font-body:    'Syne', sans-serif;
@@ -23,7 +23,7 @@ html { scroll-behavior: smooth; }
 body {
   background:
     linear-gradient(rgba(245, 249, 255, 0.80), rgba(233, 241, 255, 0.88)),
-    url("assets/hatter.png") center center / cover no-repeat fixed;
+    url("../hatter.png") center center / cover no-repeat fixed;
   color: var(--text);
   font-family: var(--font-body);
   font-size: 16px;
@@ -125,7 +125,7 @@ img { display: block; max-width: 100%; }
     linear-gradient(135deg, rgba(255,255,255,.35), rgba(255,255,255,.15)),
     radial-gradient(ellipse 70% 50% at 20% 50%, rgba(200,169,110,.10) 0%, transparent 60%),
     radial-gradient(ellipse 70% 50% at 80% 50%, rgba(59,130,246,.12) 0%, transparent 60%),
-    url("assets/hatter.png") center center / cover no-repeat;
+    url("../hatter.png") center center / cover no-repeat;
 }
 
 .hero-overlay {
