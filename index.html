@@ -3,132 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Raceboy x Escobar Shop</title>
-  <meta name="description" content="Raceboy és Escobar közös webshop alap. GitHub és Netlify kompatibilis statikus verzió.">
+  <title>Raceboy × Escobar — Official Shop</title>
+  <meta name="description" content="Raceboy és Escobar hivatalos webshop. Exkluzív merch, limitált dropok.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <nav class="brand-nav">
-    <div class="container nav-inner">
-      <a class="brand-title" href="./">Raceboy x Escobar<span class="brand-sub">Raceboy Termékek · Escobar Termékek · Közös dropok</span></a>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="./">RB<span class="nav-x">×</span>ESC</a>
       <div class="nav-links">
-        <a href="#raceboy">Raceboy</a>
         <a href="#escobar">Escobar</a>
+        <a href="#raceboy">Raceboy</a>
         <a href="#kozos">Közös</a>
-        <a class="cart-btn" href="javascript:void(0)">Kosár 0</a>
       </div>
     </div>
   </nav>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-card">
-        <h1>Raceboy x Escobar webshop</h1>
-        <p>Ez már egy statikus, leegyszerűsített verzió, ami megy GitHub repóban és Netlify-on is. Kivágtam belőle a Django részeket, így most nincs backend, nincs admin és nincs adatbázis, viszont a design azonnal megjelenik és könnyen szerkeszthető.</p>
-        <div class="hero-tags">
-          <span>Netlify kompatibilis</span>
-          <span>GitHub kompatibilis</span>
-          <span>Felesleges demo tartalom kiszedve</span>
-          <span>Könnyen átírható</span>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg-lines"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Official Merch Store</p>
+      <h1 class="hero-title">
+        <span class="hero-line reveal-up" style="--d:0ms">RACEBOY</span>
+        <span class="hero-x reveal-up" style="--d:120ms">×</span>
+        <span class="hero-line reveal-up" style="--d:240ms">ESCOBAR</span>
+      </h1>
+      <p class="hero-sub reveal-up" style="--d:380ms">Exkluzív darabok. Limitált dropok. Két brand, egy helyen.</p>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- ESCOBAR SECTION -->
+    <section class="brand-section" id="escobar">
+      <div class="section-inner">
+        <div class="section-label">01 — Escobar</div>
+        <div class="brand-showcase">
+          <div class="brand-image-wrap reveal-left">
+            <img src="assets/escobar.png" alt="Escobar" class="brand-image">
+            <div class="brand-image-glow escobar-glow"></div>
+          </div>
+          <div class="brand-info reveal-right">
+            <h2 class="brand-name">Escobar</h2>
+            <p class="brand-desc">Az Escobar kollekció erős esztétikát és utcai hangulatot hoz. Prémium anyagok, egyedi minták, kompromisszumok nélkül.</p>
+            <a class="cta-btn escobar-btn" href="escobar.html">
+              <span class="cta-text">Termékek megtekintése</span>
+              <span class="cta-arrow">→</span>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="notice">Itt most mintatermékek vannak. A szövegeket, árakat és neveket az <strong>index.html</strong>-ben tudod gyorsan átírni.</div>
     </section>
 
-    <section class="section" id="raceboy">
-      <h2 class="section-title">Raceboy Termékek</h2>
-      <p class="section-sub">Külön Raceboy kínálat.</p>
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="product-thumb"><div class="thumb-text"><div class="thumb-badge">Raceboy</div><div class="thumb-name">Raceboy<br>Póló</div></div></div>
-          <div class="product-body">
-            <div class="product-meta">Raceboy termék</div>
-            <h4>Raceboy Signature Tee</h4>
-            <div class="product-desc">Letisztult alap póló Raceboy stílusban. Saját képre és valódi termékre cserélhető.</div>
-            <div class="product-price">9 990 Ft</div>
-            <a class="buy-btn" href="javascript:void(0)">Részletek</a>
+    <!-- RACEBOY SECTION -->
+    <section class="brand-section" id="raceboy">
+      <div class="section-inner">
+        <div class="section-label">02 — Raceboy</div>
+        <div class="brand-showcase brand-showcase--reverse">
+          <div class="brand-image-wrap reveal-right">
+            <img src="assets/raceboy.png" alt="Raceboy" class="brand-image">
+            <div class="brand-image-glow raceboy-glow"></div>
           </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-thumb"><div class="thumb-text"><div class="thumb-badge">Raceboy</div><div class="thumb-name">Raceboy<br>Hoodie</div></div></div>
-          <div class="product-body">
-            <div class="product-meta">Raceboy termék</div>
-            <h4>Raceboy Oversize Hoodie</h4>
-            <div class="product-desc">Sötét, erősebb hangulatú hoodie blokk. Később valódi fotóval könnyen cserélhető.</div>
-            <div class="product-price">16 990 Ft</div>
-            <a class="buy-btn" href="javascript:void(0)">Részletek</a>
+          <div class="brand-info reveal-left">
+            <h2 class="brand-name">Raceboy</h2>
+            <p class="brand-desc">A Raceboy vonal a sebesség és az adrenalin esztétikáját hozza a streetwearbe. Letisztult formák, merész részletek.</p>
+            <a class="cta-btn raceboy-btn" href="raceboy.html">
+              <span class="cta-text">Termékek megtekintése</span>
+              <span class="cta-arrow">→</span>
+            </a>
           </div>
-        </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="escobar">
-      <h2 class="section-title">Escobar Termékek</h2>
-      <p class="section-sub">Külön Escobar kínálat.</p>
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="product-thumb"><div class="thumb-text"><div class="thumb-badge">Escobar</div><div class="thumb-name">Escobar<br>Cap</div></div></div>
-          <div class="product-body">
-            <div class="product-meta">Escobar termék</div>
-            <h4>Escobar Snapback</h4>
-            <div class="product-desc">Egyszerű sapka termékblokk Escobar vonalra szabva.</div>
-            <div class="product-price">7 990 Ft</div>
-            <a class="buy-btn" href="javascript:void(0)">Részletek</a>
+    <!-- KÖZÖS SECTION -->
+    <section class="brand-section" id="kozos">
+      <div class="section-inner">
+        <div class="section-label">03 — Collab</div>
+        <div class="brand-showcase">
+          <div class="brand-image-wrap reveal-left">
+            <img src="assets/kozos.png" alt="Közös drop" class="brand-image">
+            <div class="brand-image-glow kozos-glow"></div>
           </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-thumb"><div class="thumb-text"><div class="thumb-badge">Escobar</div><div class="thumb-name">Escobar<br>Pulcsi</div></div></div>
-          <div class="product-body">
-            <div class="product-meta">Escobar termék</div>
-            <h4>Escobar Street Hoodie</h4>
-            <div class="product-desc">Erősebb, sötét látványvilágú mintablokk Escobar merchhöz.</div>
-            <div class="product-price">17 990 Ft</div>
-            <a class="buy-btn" href="javascript:void(0)">Részletek</a>
+          <div class="brand-info reveal-right">
+            <h2 class="brand-name">Közös Drop</h2>
+            <p class="brand-desc">Ahol a két brand találkozik. A közös kollekció a leglimitáltabb darabokat foglalja magában — ha lemaradsz, lemaradsz.</p>
+            <a class="cta-btn kozos-btn" href="kozos.html">
+              <span class="cta-text">Termékek megtekintése</span>
+              <span class="cta-arrow">→</span>
+            </a>
           </div>
-        </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="kozos">
-      <h2 class="section-title">Közös Termékek</h2>
-      <p class="section-sub">Közös dropok és collab cuccok.</p>
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="product-thumb"><div class="thumb-text"><div class="thumb-badge">Collab</div><div class="thumb-name">Raceboy x<br>Escobar</div></div></div>
-          <div class="product-body">
-            <div class="product-meta">Közös termék</div>
-            <h4>Collab Signature Tee</h4>
-            <div class="product-desc">Közös merch blokk, ide jöhetnek a legerősebb közös darabok.</div>
-            <div class="product-price">11 990 Ft</div>
-            <a class="buy-btn" href="javascript:void(0)">Részletek</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-thumb"><div class="thumb-text"><div class="thumb-badge">Collab</div><div class="thumb-name">Limited<br>Drop</div></div></div>
-          <div class="product-body">
-            <div class="product-meta">Közös termék</div>
-            <h4>Limited Drop Hoodie</h4>
-            <div class="product-desc">Limitált közös pulcsi minta. Cserélhető igazi képre és linkre.</div>
-            <div class="product-price">19 990 Ft</div>
-            <a class="buy-btn" href="javascript:void(0)">Részletek</a>
-          </div>
-        </article>
-      </div>
-
-      <div class="edit-box">
-        <strong>Gyors szerkesztés:</strong> nyisd meg az <code>index.html</code> fájlt, és cseréld ki a termékneveket, árakat, szövegeket. Ha saját képeket is akarsz, rakd őket az <code>assets</code> mappába, majd a kártyákban a placeholder blokk helyére tegyél <code>&lt;img&gt;</code> taget.
-      </div>
-    </section>
   </main>
 
-  <footer>
-    <div class="container" style="text-align:center">
-      <div style="font-weight:700;color:#fff;margin-bottom:8px;">Raceboy x Escobar Shop</div>
-      <div>Statikus webshop alap GitHubhoz és Netlifyhoz.</div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">RB<span>×</span>ESC</span>
+      <span class="footer-copy">© 2025 Raceboy × Escobar</span>
     </div>
   </footer>
+
+  <script>
+    // Intersection Observer – reveal on scroll
+    const reveals = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => io.observe(el));
+  </script>
 </body>
 </html>
