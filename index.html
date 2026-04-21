@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
       <a class="nav-logo" href="./">RB<span class="nav-x">×</span>ESC</a>
@@ -34,7 +33,6 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <header class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-bg-lines"></div>
@@ -56,16 +54,14 @@
     </div>
   </header>
 
-  <!-- MAIN -->
   <main>
 
-    <!-- ESCOBAR SECTION -->
     <section class="brand-section" id="escobar">
       <div class="section-inner">
         <div class="section-label">01 — Escobar</div>
         <div class="brand-showcase">
           <div class="brand-image-wrap reveal-left">
-            <img src="assets/escobar.png" alt="Escobar" class="brand-image">
+            <img src="escobar.png" alt="Escobar" class="brand-image">
             <div class="brand-image-glow escobar-glow"></div>
           </div>
           <div class="brand-info reveal-right">
@@ -80,13 +76,12 @@
       </div>
     </section>
 
-    <!-- RACEBOY SECTION -->
     <section class="brand-section" id="raceboy">
       <div class="section-inner">
         <div class="section-label">02 — Raceboy</div>
         <div class="brand-showcase brand-showcase--reverse">
           <div class="brand-image-wrap reveal-right">
-            <img src="assets/raceboy.png" alt="Raceboy" class="brand-image">
+            <img src="raceboy.png" alt="Raceboy" class="brand-image">
             <div class="brand-image-glow raceboy-glow"></div>
           </div>
           <div class="brand-info reveal-left">
@@ -101,13 +96,12 @@
       </div>
     </section>
 
-    <!-- KÖZÖS SECTION -->
     <section class="brand-section" id="kozos">
       <div class="section-inner">
         <div class="section-label">03 — Collab</div>
         <div class="brand-showcase">
           <div class="brand-image-wrap reveal-left">
-            <img src="assets/kozos.png" alt="Közös drop" class="brand-image">
+            <img src="kozos.png" alt="Közös drop" class="brand-image">
             <div class="brand-image-glow kozos-glow"></div>
           </div>
           <div class="brand-info reveal-right">
@@ -124,7 +118,6 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner footer-inner-column">
       <span class="footer-logo">RB<span>×</span>ESC</span>
@@ -157,7 +150,6 @@
   </footer>
 
   <script>
-    // Intersection Observer – reveal on scroll
     const reveals = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
