@@ -12,20 +12,20 @@ html {
 }
 
 :root {
-  --bg:          #eef4ff;
-  --surface:     rgba(255,255,255,.72);
-  --border:      rgba(15,23,42,.10);
-  --text:        #0b1220;
-  --muted:       #334155;
-  --soft:        #475569;
-  --white:       #ffffff;
+  --bg: #eef4ff;
+  --surface: rgba(255,255,255,.80);
+  --border: rgba(15,23,42,.10);
+  --text: #0b1220;
+  --muted: #334155;
+  --soft: #475569;
+  --white: #ffffff;
 
-  --escobar:     #c8a96e;
-  --raceboy:     #2563eb;
-  --kozos:       #dc2626;
+  --escobar: #c8a96e;
+  --raceboy: #2563eb;
+  --kozos: #dc2626;
 
-  --font-display: 'Bebas Neue', sans-serif;
-  --font-body: 'Syne', sans-serif;
+  --font-display: 'Anton', sans-serif;
+  --font-body: 'Inter', sans-serif;
 }
 
 body {
@@ -41,19 +41,9 @@ body {
   font-style: normal;
 }
 
-a,
-p,
-span,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-button,
-strong {
+a, p, span, div, h1, h2, h3, h4, h5, h6, button, strong {
   font-style: normal !important;
+  transform: none;
 }
 
 a {
@@ -75,7 +65,7 @@ img {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(255,255,255,.80);
+  background: rgba(255,255,255,.82);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
@@ -194,7 +184,7 @@ img {
     linear-gradient(rgba(15,23,42,.08) 1px, transparent 1px),
     linear-gradient(90deg, rgba(15,23,42,.08) 1px, transparent 1px);
   background-size: 60px 60px;
-  opacity: .42;
+  opacity: .35;
   animation: gridMove 20s linear infinite;
   z-index: 1;
 }
@@ -217,7 +207,6 @@ img {
   text-transform: uppercase;
   color: #4c1d95;
   margin-bottom: 24px;
-  text-shadow: 0 1px 0 rgba(255,255,255,.20);
   font-style: normal !important;
 }
 
@@ -227,32 +216,28 @@ img {
   align-items: center;
   gap: 0;
   font-family: var(--font-display);
-  font-size: clamp(84px, 14vw, 168px);
-  line-height: .88;
-  letter-spacing: .03em;
+  font-size: clamp(76px, 13vw, 150px);
+  line-height: .95;
+  letter-spacing: .02em;
   color: #050b16;
-  text-shadow:
-    0 2px 0 rgba(255,255,255,.22),
-    0 8px 18px rgba(15,23,42,.12);
+  text-shadow: 0 8px 18px rgba(15,23,42,.12);
   font-style: normal !important;
   transform: none !important;
-  skew: none;
 }
 
 .hero-line {
-  position: relative;
+  display: block;
   padding: 0 12px;
   font-style: normal !important;
 }
 
 .hero-x {
-  font-size: clamp(40px, 6vw, 84px);
+  font-family: var(--font-display);
+  font-size: clamp(38px, 5vw, 68px);
   color: #e11d48;
   display: block;
-  margin: 6px 0;
-  text-shadow:
-    0 2px 0 rgba(255,255,255,.20),
-    0 8px 18px rgba(225,29,72,.14);
+  margin: 8px 0;
+  line-height: 1;
   font-style: normal !important;
 }
 
@@ -266,7 +251,7 @@ img {
   margin-right: auto;
   line-height: 1.75;
   padding: 18px 24px;
-  background: rgba(255,255,255,.40);
+  background: rgba(255,255,255,.45);
   border: 1px solid rgba(15,23,42,.08);
   border-radius: 18px;
   box-shadow: 0 14px 34px rgba(15,23,42,.08);
@@ -274,6 +259,9 @@ img {
   font-style: normal !important;
 }
 
+/* ===========================
+   SCROLL HINT
+   =========================== */
 .hero-scroll-hint {
   position: absolute;
   bottom: 32px;
@@ -343,7 +331,6 @@ img {
   text-transform: uppercase;
   color: #5b21b6;
   margin-bottom: 48px;
-  text-shadow: 0 1px 0 rgba(255,255,255,.20);
   font-style: normal !important;
 }
 
@@ -362,7 +349,6 @@ img {
   direction: ltr;
 }
 
-/* Image */
 .brand-image-wrap {
   position: relative;
   aspect-ratio: 4/5;
@@ -405,7 +391,6 @@ img {
   border: 1px solid rgba(220,38,38,.24);
 }
 
-/* Info */
 .brand-info {
   display: flex;
   flex-direction: column;
@@ -414,13 +399,11 @@ img {
 
 .brand-name {
   font-family: var(--font-display);
-  font-size: clamp(60px, 7vw, 104px);
-  letter-spacing: .03em;
-  line-height: .95;
+  font-size: clamp(54px, 6vw, 96px);
+  letter-spacing: .02em;
+  line-height: .98;
   color: #050b16;
-  text-shadow:
-    0 2px 0 rgba(255,255,255,.18),
-    0 8px 18px rgba(15,23,42,.08);
+  text-shadow: 0 8px 18px rgba(15,23,42,.08);
   font-style: normal !important;
 }
 
@@ -449,7 +432,7 @@ img {
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
-  transition: gap .3s ease, transform .2s ease, box-shadow .25s ease, filter .25s ease;
+  transition: gap .3s ease, transform .2s ease, box-shadow .25s ease;
   width: fit-content;
   box-shadow: 0 16px 36px rgba(17,24,39,.12);
   font-style: normal !important;
@@ -467,7 +450,6 @@ img {
   gap: 20px;
   transform: translateY(-2px);
   box-shadow: 0 20px 42px rgba(17,24,39,.16);
-  filter: saturate(1.05);
 }
 
 .cta-btn:hover::before {
@@ -484,7 +466,6 @@ img {
   transform: translateX(4px);
 }
 
-/* Per-brand colors */
 .escobar-btn {
   background: linear-gradient(180deg, #d6b57b, #c8a96e);
   color: #080a0d;
