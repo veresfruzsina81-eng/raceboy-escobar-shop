@@ -1,0 +1,23 @@
+<nav class="navbar brand-nav">
+  <div class="container">
+    <div class="row" style="display:flex;align-items:center;flex-wrap:wrap;">
+      <div class="col-sm-3">
+        <a class="brand-title" href="/">Raceboy x Escobar<span class="brand-sub">Raceboy Termékek · Escobar Termékek · Közös dropok</span></a>
+      </div>
+      <div class="col-sm-6 search-box">
+        <form action="/search" method="get">
+          <div class="input-group">
+            <input class="form-control" type="search" placeholder="Keresés termékek között..." name="query" id="query">
+            <span class="input-group-btn"><button type="submit" class="btn">Keresés</button></span>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-3 text-right nav-links" style="margin-top:8px;">
+        <a href="/customerlogin">Belépés</a>
+        <a href="/customersignup" style="margin-left:14px;">Regisztráció</a>
+        <a href="/adminclick" style="margin-left:14px;">Admin</a>
+        <a class="cart-btn" href="/cart">Kosár <span class="badge">{{ product_count_in_cart }}</span></a>
+      </div>
+    </div>
+  </div>
+</nav>

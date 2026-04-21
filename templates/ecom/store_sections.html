@@ -1,0 +1,23 @@
+<section>
+  <h2 class="section-title">Raceboy Termékek</h2>
+  <p class="section-sub">Külön Raceboy kínálat.</p>
+  {% if raceboy_products %}
+    <div class="product-grid">{% for p in raceboy_products %}{% include 'ecom/product_card.html' %}{% endfor %}</div>
+  {% else %}<div class="empty-box">Még nincs feltöltött Raceboy termék.</div>{% endif %}
+</section>
+
+<section>
+  <h2 class="section-title">Escobar Termékek</h2>
+  <p class="section-sub">Külön Escobar kínálat.</p>
+  {% if escobar_products %}
+    <div class="product-grid">{% for p in escobar_products %}{% include 'ecom/product_card.html' %}{% endfor %}</div>
+  {% else %}<div class="empty-box">Még nincs feltöltött Escobar termék.</div>{% endif %}
+</section>
+
+<section>
+  <h2 class="section-title">Közös Termékek</h2>
+  <p class="section-sub">Közös dropok és collab cuccok.</p>
+  {% if kozos_products %}
+    <div class="product-grid">{% for p in kozos_products %}{% include 'ecom/product_card.html' %}{% endfor %}</div>
+  {% else %}<div class="empty-box">Még nincs feltöltött közös termék.</div>{% endif %}
+</section>
